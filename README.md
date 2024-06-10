@@ -1,4 +1,4 @@
-# CombatShields
+# [Combat Shields (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2983650634)
 
 ![Image](https://i.imgur.com/buuPQel.png)
 
@@ -8,7 +8,6 @@ with permission
 - Added mod-settings what ranged weapons can be used with shields
 
 ![Image](https://i.imgur.com/pufA0kM.png)
-
 	
 ![Image](https://i.imgur.com/Z4GOv8H.png)
 
@@ -55,8 +54,7 @@ Description: A heavy shield in Norse style, it was famously carried by the vikin
 
 # Kite Shield:
 
-![Image](https://i.imgur.com/njdjIy7.png)
-![Image](https://i.imgur.com/TjPtEIR.png)
+![Image](https://i.imgur.com/njdjIy7.png)![Image](https://i.imgur.com/TjPtEIR.png)
 
 Recipe: 70 x Wood
 Description: A cavalryman's shield, the kite shield originated in Western Europe, becoming widespread around the 10th Century AD. While one of the few designs of the time that offered good protection the users legs, its length made it awkward for infantry to use. Nevertheless, it was extremely popular, seeing extensive use throughout Europe, and evenutally being introduced to the Holy Land by Norman Crusaders.
@@ -142,13 +140,12 @@ All the folks on the Rimworld discord for their endless patience and help.
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib or the standalone https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Uploader and command Ctrl+F12
+-  Post your error-log using [HugsLib](https://steamcommunity.com/workshop/filedetails/?id=818773962) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
--  Use https://github.com/RimSort/RimSort/releases/latest]RimSort to sort your mods
+-  Use [RimSort](https://github.com/RimSort/RimSort/releases/latest) to sort your mods
 
 
 
-https://steamcommunity.com/sharedfiles/filedetails/changelog/2983650634]![Image](https://img.shields.io/github/v/release/emipa606/CombatShields?label=latest%20version&style=plastic&color=9f1111&labelColor=black)
-
+[![Image](https://img.shields.io/github/v/release/emipa606/CombatShields?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2983650634)

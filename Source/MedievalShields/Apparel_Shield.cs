@@ -78,7 +78,7 @@ public class Apparel_Shield : Apparel
 
         var num = 0f;
         var vector = Wearer.Drawer.DrawPos;
-        vector.y = AltitudeLayer.Pawn.AltitudeFor();
+        vector.y = AltitudeLayer.MoteOverhead.AltitudeFor();
         var s = new Vector3(1f, 1f, 1f);
         if (Wearer.Rotation == Rot4.North)
         {
@@ -99,7 +99,7 @@ public class Apparel_Shield : Apparel
         }
         else if (Wearer.Rotation == Rot4.West)
         {
-            vector.y = AltitudeLayer.MoteOverhead.AltitudeFor();
+            vector.y = AltitudeLayer.Item.AltitudeFor();
             vector.z -= 0.2f;
             num = 270f;
         }

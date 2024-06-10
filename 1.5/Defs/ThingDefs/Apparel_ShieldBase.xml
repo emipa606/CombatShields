@@ -175,6 +175,9 @@
         <li>FullHead</li>
         <li>Feet</li>
       </bodyPartGroups>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
     </apparel>
     <equippedStatOffsets>
       <MeleeHitChance>-0.25</MeleeHitChance>
