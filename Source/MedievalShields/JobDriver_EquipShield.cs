@@ -13,10 +13,10 @@ internal class JobDriver_EquipShield : JobDriver
 
     protected override IEnumerable<Toil> MakeNewToils()
     {
-        yield return ShieldToInventory(pawn);
+        yield return shieldToInventory(pawn);
     }
 
-    public static Toil ShieldToInventory(Pawn pawn)
+    private static Toil shieldToInventory(Pawn pawn)
     {
         var toil = new Toil();
         // do we have a shield equipped

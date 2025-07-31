@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="VWE_Throwing_Shards"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!-- Allow certain ranged weapons to be used with shields -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VWE_Throwing_Shards"]/weaponTags</xpath>
+          <value>
+            <li>Shield_Sidearm</li>
+          </value>
+        </li>
+        <!-- Allow certain ranged weapons to be used with light shields -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VWE_Sling"]/weaponTags</xpath>
+          <value>
+            <li>LightShield_Sidearm</li>
+          </value>
+        </li>
+        <!-- Don't allow certain melee weapons to be used with shields -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VWE_MeleeWeapon_HeavyClub"]/weaponTags</xpath>
+          <value>
+            <li>Shield_NoSidearm</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

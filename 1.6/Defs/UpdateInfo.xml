@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TabulaRasa.UpdateDef Abstract="true" Name="CombatShields_UpdateInfoBase" MayRequire="neronix17.toolbox">
+    <linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2983650634</linkUrl>
+    <banner>UpdateInfo/CombatShields</banner>
+  </TabulaRasa.UpdateDef>
+  <TabulaRasa.UpdateDef ParentName="CombatShields_UpdateInfoBase" MayRequire="neronix17.toolbox">
+    <defName>CombatShields_1_4_3</defName>
+    <date>2023/6/5</date>
+    <content>The mod now has settings to change what ranged weapons can be used with shields.
+Weapons can also be limited to be used with light shields only.
+Hopefully this will simplify compatibility with other mods.
+The mod should now also work better when using mods that changes apparel categories.</content>
+  </TabulaRasa.UpdateDef>
+</Defs>

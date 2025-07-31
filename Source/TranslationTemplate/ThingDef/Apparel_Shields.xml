@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: aspis -->
+  <Apparel_Aspis.label>aspis</Apparel_Aspis.label>
+  <!-- EN: A convex shield made of wood and often covered with a thin sheet of bronze or other metal. -->
+  <Apparel_Aspis.description>A convex shield made of wood and often covered with a thin sheet of bronze or other metal.</Apparel_Aspis.description>
+  <!-- EN: assault shield -->
+  <Apparel_AssaultShield.label>assault shield</Apparel_AssaultShield.label>
+  <!-- EN: An advanced shield with integrated sensors to assist with balancing to make it easier to handle. Smaller and lighter than a full-sized ballistic shield, it is designed to protect the user from gunfire. Favoring speed and reduced weight over protection, it is less cumbersome than most shields. -->
+  <Apparel_AssaultShield.description>An advanced shield with integrated sensors to assist with balancing to make it easier to handle. Smaller and lighter than a full-sized ballistic shield, it is designed to protect the user from gunfire. Favoring speed and reduced weight over protection, it is less cumbersome than most shields.</Apparel_AssaultShield.description>
+  <!-- EN: ballistic shield -->
+  <Apparel_BallisticShield.label>ballistic shield</Apparel_BallisticShield.label>
+  <!-- EN: A heavy shield made of advanced alloys and designed to withstand high-caliber gunfire. -->
+  <Apparel_BallisticShield.description>A heavy shield made of advanced alloys and designed to withstand high-caliber gunfire.</Apparel_BallisticShield.description>
+  <!-- EN: buckler -->
+  <Apparel_BucklerShield.label>buckler</Apparel_BucklerShield.label>
+  <!-- EN: An extremely small metal shield, usually paired with a rapier or similarly light sword. Too small to offer any meaningful protection from incoming projectiles, the buckler is instead designed to deflect and trap a foe's weapon in close-quarters combat. -->
+  <Apparel_BucklerShield.description>An extremely small metal shield, usually paired with a rapier or similarly light sword. Too small to offer any meaningful protection from incoming projectiles, the buckler is instead designed to deflect and trap a foe's weapon in close-quarters combat.</Apparel_BucklerShield.description>
+  <!-- EN: crusader's kite shield -->
+  <Apparel_CrusaderShield.label>crusader's kite shield</Apparel_CrusaderShield.label>
+  <!-- EN: A heavy shield that covers the legs made popular by the Normans, bearing the crimson symbol of the Crusaders. Made of thick wood, it is designed to protect the user in hand-to-hand combat and against projectiles. It offers good protection, but restricts use of two-handed weapons. -->
+  <Apparel_CrusaderShield.description>A heavy shield that covers the legs made popular by the Normans, bearing the crimson symbol of the Crusaders. Made of thick wood, it is designed to protect the user in hand-to-hand combat and against projectiles. It offers good protection, but restricts use of two-handed weapons.</Apparel_CrusaderShield.description>
+  <!-- EN: carapace shield -->
+  <Apparel_ImperialShield.label>carapace shield</Apparel_ImperialShield.label>
+  <!-- EN: A highly advanced shield carried into battle by the elite, psychic troops of the Empire. It offers the user not only unparalled protection, but also a number of other combat enhancements. -->
+  <Apparel_ImperialShield.description>A highly advanced shield carried into battle by the elite, psychic troops of the Empire. It offers the user not only unparalled protection, but also a number of other combat enhancements.</Apparel_ImperialShield.description>
+  <!-- EN: kite shield -->
+  <Apparel_KiteShield.label>kite shield</Apparel_KiteShield.label>
+  <!-- EN: A heavy shield that covers the legs made popular by the Normans. Made of thick wood, it is designed to protect the user in hand-to-hand combat and against projectiles. It offers good protection, but restricts use of two-handed weapons. -->
+  <Apparel_KiteShield.description>A heavy shield that covers the legs made popular by the Normans. Made of thick wood, it is designed to protect the user in hand-to-hand combat and against projectiles. It offers good protection, but restricts use of two-handed weapons.</Apparel_KiteShield.description>
+  <!-- EN: nguni shield -->
+  <Apparel_NguniShield.label>nguni shield</Apparel_NguniShield.label>
+  <!-- EN: A lightweight shield made of leather and wood, made famous by the Zulu. Though fairly thin, it can block simple projectiles and is useful in close-quarters-combat. -->
+  <Apparel_NguniShield.description>A lightweight shield made of leather and wood, made famous by the Zulu. Though fairly thin, it can block simple projectiles and is useful in close-quarters-combat.</Apparel_NguniShield.description>
+  <!-- EN: norse shield -->
+  <Apparel_NordShield.label>norse shield</Apparel_NordShield.label>
+  <!-- EN: A heavy shield in Norse style, it was famously carried by the vikings on their raids into Western Europe. Designed to protect the user in hand-to-hand combat and against projectiles. Made of thick timber with a heavy iron rim, it is quite sturdy. -->
+  <Apparel_NordShield.description>A heavy shield in Norse style, it was famously carried by the vikings on their raids into Western Europe. Designed to protect the user in hand-to-hand combat and against projectiles. Made of thick timber with a heavy iron rim, it is quite sturdy.</Apparel_NordShield.description>
+  <!-- EN: pavise -->
+  <Apparel_Pavise.label>pavise</Apparel_Pavise.label>
+  <!-- EN: A large, heavy shield made of rough-hewn planks. Designed to protect archers and crossbowmen from incoming projectiles, it is extremely cumbersome in hand-to-hand combat. -->
+  <Apparel_Pavise.description>A large, heavy shield made of rough-hewn planks. Designed to protect archers and crossbowmen from incoming projectiles, it is extremely cumbersome in hand-to-hand combat.</Apparel_Pavise.description>
+  <!-- EN: riot shield -->
+  <Apparel_RiotShield.label>riot shield</Apparel_RiotShield.label>
+  <!-- EN: A lightweight metal shield designed to protect the user against thrown objects and melee attack, but not thick enough to stop gunfire or other armor-piercing projectiles. It can cover most of the wearer's body but restricts use of two-handed weapons. -->
+  <Apparel_RiotShield.description>A lightweight metal shield designed to protect the user against thrown objects and melee attack, but not thick enough to stop gunfire or other armor-piercing projectiles. It can cover most of the wearer's body but restricts use of two-handed weapons.</Apparel_RiotShield.description>
+  <!-- EN: scutum -->
+  <Apparel_Scutum.label>scutum</Apparel_Scutum.label>
+  <!-- EN: A heavy shield in Roman style designed to protect the user in hand-to-hand combat and against projectiles. -->
+  <Apparel_Scutum.description>A heavy shield in Roman style designed to protect the user in hand-to-hand combat and against projectiles.</Apparel_Scutum.description>
+  <!-- EN: tactical shield -->
+  <Apparel_TacShield.label>tactical shield</Apparel_TacShield.label>
+  <!-- EN: A "soft" medium-sized ballistic shield, made from reinforced textile materials rather than metal. Though offering less ballistic protection than the assault shield, it offers wider coverage at a fraction of the weight. -->
+  <Apparel_TacShield.description>A "soft" medium-sized ballistic shield, made from reinforced textile materials rather than metal. Though offering less ballistic protection than the assault shield, it offers wider coverage at a fraction of the weight.</Apparel_TacShield.description>
+  <!-- EN: wicker shield -->
+  <Apparel_WickerShield.label>wicker shield</Apparel_WickerShield.label>
+  <!-- EN: A light shield made of wicker, similar to the kind once used by infantry of the ancient Persian empire. While effective against arrows and other projectiles, it is generally not sturdy enough to stop the thrust of a spear or sword. -->
+  <Apparel_WickerShield.description>A light shield made of wicker, similar to the kind once used by infantry of the ancient Persian empire. While effective against arrows and other projectiles, it is generally not sturdy enough to stop the thrust of a spear or sword.</Apparel_WickerShield.description>
+</LanguageData>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- This patch operation adds a weaponTag to weapons that can safely be added to NPC pawnkinds. -->
+  <!-- Neolithic -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef/weaponTags[count(li[text()="NeolithicMeleeBasic"])>0 and count(li[text()="Shield_NoSidearm"])=0]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef/weaponTags[count(li[text()="NeolithicMeleeBasic"])>0 and count(li[text()="Shield_NoSidearm"])=0]</xpath>
+      <value>
+        <li>ShieldSafeMelee_Neolithic_Basic</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef/weaponTags[count(li[text()="NeolithicMeleeDecent"])>0 and count(li[text()="Shield_NoSidearm"])=0]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef/weaponTags[count(li[text()="NeolithicMeleeDecent"])>0 and count(li[text()="Shield_NoSidearm"])=0]</xpath>
+      <value>
+        <li>ShieldSafeMelee_Neolithic_Decent</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef/weaponTags[count(li[text()="NeolithicMeleeAdvanced"])>0 and count(li[text()="Shield_NoSidearm"])=0]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef/weaponTags[count(li[text()="NeolithicMeleeAdvanced"])>0 and count(li[text()="Shield_NoSidearm"])=0]</xpath>
+      <value>
+        <li>ShieldSafeMelee_Neolithic_Advanced</li>
+      </value>
+    </match>
+  </Operation>
+  <!-- Medieval -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef/weaponTags[count(li[text()="MedievalMeleeBasic"])>0 and count(li[text()="Shield_NoSidearm"])=0]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef/weaponTags[count(li[text()="MedievalMeleeBasic"])>0 and count(li[text()="Shield_NoSidearm"])=0]</xpath>
+      <value>
+        <li>ShieldSafeMelee_Medieval_Basic</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef/weaponTags[count(li[text()="MedievalMeleeDecent"])>0 and count(li[text()="Shield_NoSidearm"])=0]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef/weaponTags[count(li[text()="MedievalMeleeDecent"])>0 and count(li[text()="Shield_NoSidearm"])=0]</xpath>
+      <value>
+        <li>ShieldSafeMelee_Medieval_Decent</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef/weaponTags[count(li[text()="MedievalMeleeAdvanced"])>0 and count(li[text()="Shield_NoSidearm"])=0]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef/weaponTags[count(li[text()="MedievalMeleeAdvanced"])>0 and count(li[text()="Shield_NoSidearm"])=0]</xpath>
+      <value>
+        <li>ShieldSafeMelee_Medieval_Advanced</li>
+      </value>
+    </match>
+  </Operation>
+</Patch>

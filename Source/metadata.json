@@ -2,6 +2,14 @@
   "Continued": true,
   "CanAdd": "0",
   "CanRemove": "2",
-  "PreviewVersion": "1.5",
-  "SocialImageSet": true
+  "PreviewVersion": "1.6",
+  "SocialImageSet": true,
+  "Patches": true,
+  "Defs": true,
+  "Assemblies": true,
+  "LinesOfCode": 31961,
+  "LinesOfXML": 71015,
+  "CodeBaseSize": 79,
+  "LastXmlCleaning": "2025-07-31T17:30:21.3559795+02:00",
+  "SearchTags": "shields"
 }

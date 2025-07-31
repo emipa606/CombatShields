@@ -1,0 +1,36 @@
+ManifestFileVersion: 0
+CRC: 3240512579
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b961e92757160413e63944953f01d029
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: b961e92757160413e63944953f01d029
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Data/Mlie.CombatShields/Textures/Royal_Shield.png
+- Assets/Data/Mlie.CombatShields/Textures/Kite_Shield.png
+- Assets/Data/Mlie.CombatShields/Textures/Ballistic_Shield.png
+- Assets/Data/Mlie.CombatShields/Textures/Crusader_Shield.png
+- Assets/Data/Mlie.CombatShields/Textures/Wicker_Shield.png
+- Assets/Data/Mlie.CombatShields/Textures/Tactical_Shield.png
+- Assets/Data/Mlie.CombatShields/Textures/Nguni_Shield.png
+- Assets/Data/Mlie.CombatShields/Textures/Nordic_Shield.png
+- Assets/Data/Mlie.CombatShields/Textures/Assault_Shield.png
+- Assets/Data/Mlie.CombatShields/Textures/Riot_Shield.png
+- Assets/Data/Mlie.CombatShields/Textures/Pavise_Shield.png
+- Assets/Data/Mlie.CombatShields/Textures/Aspis_Shield2.png
+- Assets/Data/Mlie.CombatShields/Textures/UpdateInfo/CombatShields.png
+- Assets/Data/Mlie.CombatShields/Textures/Buckler_Shield.png
+- Assets/Data/Mlie.CombatShields/Textures/Archo_Shield.png
+- Assets/Data/Mlie.CombatShields/Textures/Aspis_Shield.png
+- Assets/Data/Mlie.CombatShields/Textures/Scutum_Shield.png
+Dependencies: []

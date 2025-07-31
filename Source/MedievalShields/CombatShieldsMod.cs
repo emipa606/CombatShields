@@ -12,14 +12,14 @@ internal class CombatShieldsMod : Mod
     /// <summary>
     ///     The instance of the settings to be read by the mod
     /// </summary>
-    public static CombatShieldsMod instance;
+    public static CombatShieldsMod Instance;
 
     private static string currentVersion;
-    private static readonly Vector2 searchSize = new Vector2(200f, 25f);
-    private static readonly Vector2 iconSize = new Vector2(58f, 58f);
+    private static readonly Vector2 searchSize = new(200f, 25f);
+    private static readonly Vector2 iconSize = new(58f, 58f);
     private static string searchText = "";
     private static Vector2 scrollPosition;
-    private static readonly Color alternateBackground = new Color(0.2f, 0.2f, 0.2f, 0.5f);
+    private static readonly Color alternateBackground = new(0.2f, 0.2f, 0.2f, 0.5f);
 
     /// <summary>
     ///     Constructor
@@ -27,18 +27,12 @@ internal class CombatShieldsMod : Mod
     /// <param name="content"></param>
     public CombatShieldsMod(ModContentPack content) : base(content)
     {
-        instance = this;
+        Instance = this;
         Settings = GetSettings<CombatShieldsSettings>();
         currentVersion = VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
-        if (Settings.ShieldUse == null)
-        {
-            Settings.ShieldUse = new Dictionary<string, bool>();
-        }
+        Settings.ShieldUse ??= new Dictionary<string, bool>();
 
-        if (Settings.LightShieldUse == null)
-        {
-            Settings.LightShieldUse = new Dictionary<string, bool>();
-        }
+        Settings.LightShieldUse ??= new Dictionary<string, bool>();
     }
 
     /// <summary>
@@ -62,23 +56,23 @@ internal class CombatShieldsMod : Mod
     /// <param name="rect"></param>
     public override void DoSettingsWindowContents(Rect rect)
     {
-        var listing_Standard = new Listing_Standard();
-        listing_Standard.Begin(rect);
+        var listingStandard = new Listing_Standard();
+        listingStandard.Begin(rect);
 
         if (currentVersion != null)
         {
-            listing_Standard.Gap();
+            listingStandard.Gap();
             GUI.contentColor = Color.gray;
-            listing_Standard.Label("CombatShields.modVersion".Translate(currentVersion));
+            listingStandard.Label("CombatShields.modVersion".Translate(currentVersion));
             GUI.contentColor = Color.white;
         }
 
-        var searchRect = listing_Standard.GetRect(25f);
+        var searchRect = listingStandard.GetRect(25f);
         var resetRect = searchRect;
         resetRect.width /= 8;
         if (Widgets.ButtonText(resetRect, "CombatShields.reset".Translate()))
         {
-            Reset();
+            reset();
         }
 
         searchRect.width /= 2;
@@ -107,13 +101,13 @@ internal class CombatShieldsMod : Mod
         TooltipHandler.TipRegion(lightShieldsLabelRect,
             string.Join("\n", Harmonypatches.AllLightShields.Select(def => def.LabelCap)));
 
-        listing_Standard.GapLine();
-        listing_Standard.End();
+        listingStandard.GapLine();
+        listingStandard.End();
 
         var borderRect = rect;
 
-        borderRect.y += listing_Standard.CurHeight;
-        borderRect.height -= listing_Standard.CurHeight;
+        borderRect.y += listingStandard.CurHeight;
+        borderRect.height -= listingStandard.CurHeight;
 
         var allRangedWeapons = Harmonypatches.AllRangedWeapons;
         if (!string.IsNullOrEmpty(searchText))
@@ -145,13 +139,10 @@ internal class CombatShieldsMod : Mod
             }
 
             var weaponLabel = $"{rangedWeapon.label.CapitalizeFirst()} ({rangedWeapon.defName}) - {modInfo}";
-            DrawIcon(rangedWeapon, new Rect(rowRect.position, iconSize));
+            drawIcon(rangedWeapon, new Rect(rowRect.position, iconSize));
             var nameRect = new Rect(rowRect.position + new Vector2(iconSize.x, 0),
                 rowRect.size - new Vector2(iconSize.x * 2, 0));
-            if (rangedWeapon.weaponTags == null)
-            {
-                rangedWeapon.weaponTags = [];
-            }
+            rangedWeapon.weaponTags ??= [];
 
             var canBeUsed = rangedWeapon.weaponTags.Contains("Shield_Sidearm");
             var couldBeUsed = canBeUsed;
@@ -215,10 +206,7 @@ internal class CombatShieldsMod : Mod
         {
             if (Harmonypatches.AllBaseShieldableWeapons.Contains(weaponDef))
             {
-                if (Settings.ShieldUse.ContainsKey(weaponDef.defName))
-                {
-                    Settings.ShieldUse.Remove(weaponDef.defName);
-                }
+                Settings.ShieldUse.Remove(weaponDef.defName);
             }
             else
             {
@@ -233,10 +221,7 @@ internal class CombatShieldsMod : Mod
             }
             else
             {
-                if (Settings.ShieldUse.ContainsKey(weaponDef.defName))
-                {
-                    Settings.ShieldUse.Remove(weaponDef.defName);
-                }
+                Settings.ShieldUse.Remove(weaponDef.defName);
             }
         }
 
@@ -244,10 +229,7 @@ internal class CombatShieldsMod : Mod
         {
             if (Harmonypatches.AllBaseLightShieldableWeapons.Contains(weaponDef))
             {
-                if (Settings.LightShieldUse.ContainsKey(weaponDef.defName))
-                {
-                    Settings.LightShieldUse.Remove(weaponDef.defName);
-                }
+                Settings.LightShieldUse.Remove(weaponDef.defName);
             }
             else
             {
@@ -262,22 +244,16 @@ internal class CombatShieldsMod : Mod
             }
             else
             {
-                if (Settings.LightShieldUse.ContainsKey(weaponDef.defName))
-                {
-                    Settings.LightShieldUse.Remove(weaponDef.defName);
-                }
+                Settings.LightShieldUse.Remove(weaponDef.defName);
             }
         }
     }
 
-    private void Reset()
+    private void reset()
     {
         foreach (var rangedWeapon in Harmonypatches.AllRangedWeapons)
         {
-            if (rangedWeapon.weaponTags == null)
-            {
-                rangedWeapon.weaponTags = [];
-            }
+            rangedWeapon.weaponTags ??= [];
 
             if (Harmonypatches.AllBaseShieldableWeapons.Contains(rangedWeapon))
             {
@@ -315,7 +291,7 @@ internal class CombatShieldsMod : Mod
     }
 
 
-    private void DrawIcon(ThingDef rangedWeapon, Rect rect)
+    private static void drawIcon(ThingDef rangedWeapon, Rect rect)
     {
         var texture2D = Widgets.GetIconFor(rangedWeapon);
 

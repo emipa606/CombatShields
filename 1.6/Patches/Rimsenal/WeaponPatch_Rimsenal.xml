@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BaseRSGrenade"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!-- Allow certain ranged weapons to be used with shields -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[@Name="BaseRSGrenade"]</xpath>
+          <value>
+            <weaponTags>
+              <li>Shield_Sidearm</li>
+            </weaponTags>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="GD_MSST"]</xpath>
+          <value>
+            <weaponTags>
+              <li>Shield_Sidearm</li>
+            </weaponTags>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/thingDef[defName="GD_MSSS"]</xpath>
+          <value>
+            <weaponTags>
+              <li>Shield_Sidearm</li>
+            </weaponTags>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="GD_TacticalPistol"]</xpath>
+          <value>
+            <weaponTags>
+              <li>Shield_Sidearm</li>
+            </weaponTags>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="GD_MSSF"]</xpath>
+          <value>
+            <weaponTags>
+              <li>Shield_Sidearm</li>
+            </weaponTags>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/thingDef[defName="GD_HVSMG"]</xpath>
+          <value>
+            <weaponTags>
+              <li>LightShield_Sidearm</li>
+            </weaponTags>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/thingDef[defName="TE_KineticPistol"]/weaponTags</xpath>
+          <value>
+            <li>Shield_Sidearm</li>
+          </value>
+        </li>
+        <!-- Don't allow certain melee weapons to be used with shields -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="JI_Ormbane"]</xpath>
+          <value>
+            <weaponTags>
+              <li>Shield_NoSidearm</li>
+            </weaponTags>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

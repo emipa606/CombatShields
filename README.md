@@ -6,6 +6,7 @@ Update of N7Huntsmans mod https://steamcommunity.com/sharedfiles/filedetails/?id
 with permission
 
 - Added mod-settings what ranged weapons can be used with shields
+- Also check ot the [reworked version](https://steamcommunity.com/sharedfiles/filedetails/?id=3284611048) of this mod made by Dizzy loeuy.
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 	
@@ -108,44 +109,18 @@ Description: A heavy shield made of advanced alloys and designed to withstand hi
 Recipe: 120 x Steel, 1 x Advanced Component
 Description: A highly advanced shield carried into battle by the elite, psychic troops of the Empire. It offers the user not only unparalled protection, but also a number of other combat enhancements.
 
-![Image](https://i.imgur.com/XIoZNaj.png)
-
-# Modded Weapons
-
-There should be no conflicts with melee weapons added by mods. For ranged weapons, the weapon must have the 'Shield_Sidearm' weapon tag to be usable with a shield.
-# Supported Mods
-
-
-
-- Simple Sidearms 
-- Rimsenal
-- Weapon Tech
-- Arrow Please
-- Medieval Times
-- Rimfire
-
-
-
-A very special thanks to:
-BukTaki, whose permission and shield framework made this mod possible.
-Dango998, for their Simplified Chinese translation.
-SET_SET, for thier Japanese translation.
-Rostropovich, for their patches for Arrow Please and Weapon Tech.
-XeoNovaDan, for their patch for Rimfire.
-All the folks on the Rimworld discord for their endless patience and help.
-
 ![Image](https://i.imgur.com/PwoNOj4.png)
 
 
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using [HugsLib](https://steamcommunity.com/workshop/filedetails/?id=818773962) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
+-  Post your error-log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
 -  Use [RimSort](https://github.com/RimSort/RimSort/releases/latest) to sort your mods
 
+ 
 
-
-[![Image](https://img.shields.io/github/v/release/emipa606/CombatShields?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2983650634)
+[![Image](https://img.shields.io/github/v/release/emipa606/CombatShields?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2983650634) | tags: shields

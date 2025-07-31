@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--
+  <PawnKindDef ParentName="TribalBase">
+    <defName>Tribal_ShieldWarrior</defName>
+    <label>shield warrior</label>
+    <combatPower>70</combatPower>
+    <itemQuality>Poor</itemQuality>
+    <canBeSapper>true</canBeSapper>
+    <gearHealthRange>0.5~1.8</gearHealthRange>	
+    <apparelMoney>230~330</apparelMoney>
+	<apparelTags>
+	<li>Shield_Neolithic</li>
+	</apparelTags>
+    <weaponMoney>150~150</weaponMoney>	
+    <weaponTags inherit="false">
+      <li>ShieldSafeMelee_Neolithic_Basic</li>	
+      <li>ShieldSafeMelee_Neolithic_Decent</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="TribalChiefBase">
+    <defName>Tribal_ShieldChiefMelee</defName>
+    <label>war chief</label>
+	<combatPower>100</combatPower>
+	<apparelTags>
+	<li>Shield_Neolithic</li>
+	</apparelTags>
+    <apparelMoney>480~780</apparelMoney>	
+    <weaponTags inherit="false">
+      <li>ShieldSafeMelee_Neolithic_Advanced</li>
+	  <li>ShieldSafeMelee_Medieval_Advanced</li>	  
+    </weaponTags>
+  </PawnKindDef>
+-->
+</Defs>

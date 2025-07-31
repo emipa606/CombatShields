@@ -1,5 +1,8 @@
 # Changelog for CombatShields
 
+1.6.0 - Mod updated for 1.6 and passed autotests
+
+
 1.5.1 - Fixed hairs not showing for tower shields, fixed heads showing on top of shields
 
 
