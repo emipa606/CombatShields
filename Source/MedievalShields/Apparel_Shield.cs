@@ -14,7 +14,7 @@ public class Apparel_Shield : Apparel
 
     public bool colorable;
     public Vector3 impactAngleVect;
-    public Material shieldMat;
+    private Material shieldMat;
 
     protected bool ShouldDisplay
     {

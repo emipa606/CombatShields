@@ -9,9 +9,9 @@ namespace CombatShields;
 internal class CombatShieldsSettings : ModSettings
 {
     public Dictionary<string, bool> LightShieldUse = new();
+    public Dictionary<string, bool> ShieldUse = new();
     private List<string> lightShieldUseKeys;
     private List<bool> lightShieldUseValues;
-    public Dictionary<string, bool> ShieldUse = new();
     private List<string> shieldUseKeys;
     private List<bool> shieldUseValues;
 

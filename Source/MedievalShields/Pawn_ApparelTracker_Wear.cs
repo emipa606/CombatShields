@@ -7,7 +7,7 @@ namespace CombatShields;
 [HarmonyPatch(typeof(Pawn_ApparelTracker), nameof(Pawn_ApparelTracker.Wear))]
 public static class Pawn_ApparelTracker_Wear
 {
-    public static void Postfix(Pawn_EquipmentTracker __instance, Apparel newApparel)
+    public static void Postfix(Pawn_ApparelTracker __instance, Apparel newApparel)
     {
         if (!Harmonypatches.IsShield(newApparel.def))
         {

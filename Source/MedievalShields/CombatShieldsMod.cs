@@ -53,11 +53,11 @@ internal class CombatShieldsMod : Mod
     ///     The settings-window
     ///     For more info: https://rimworldwiki.com/wiki/Modding_Tutorials/ModSettings
     /// </summary>
-    /// <param name="rect"></param>
-    public override void DoSettingsWindowContents(Rect rect)
+    /// <param name="inRect"></param>
+    public override void DoSettingsWindowContents(Rect inRect)
     {
         var listingStandard = new Listing_Standard();
-        listingStandard.Begin(rect);
+        listingStandard.Begin(inRect);
 
         if (currentVersion != null)
         {
@@ -83,16 +83,16 @@ internal class CombatShieldsMod : Mod
 
         Widgets.Label(new Rect(
             searchRect.position +
-            new Vector2(rect.width - (iconSize.x * 3.8f), searchRect.height / 2f),
+            new Vector2(inRect.width - (iconSize.x * 3.8f), searchRect.height / 2f),
             searchSize), "CombatShields.usablewith".Translate());
 
         var shieldsLabelRect = new Rect(
             searchRect.position +
-            new Vector2(rect.width - (iconSize.x * 2.4f), searchRect.height / 2f),
+            new Vector2(inRect.width - (iconSize.x * 2.4f), searchRect.height / 2f),
             new Vector2(iconSize.x * 1.4f, 25f));
         var lightShieldsLabelRect = new Rect(
             searchRect.position +
-            new Vector2(rect.width - (iconSize.x * 1.4f), searchRect.height / 2f),
+            new Vector2(inRect.width - (iconSize.x * 1.4f), searchRect.height / 2f),
             new Vector2(iconSize.x * 1.4f, 25f));
         Widgets.Label(shieldsLabelRect, "CombatShields.usewithshields".Translate());
         Widgets.Label(lightShieldsLabelRect, "CombatShields.usewithlightshields".Translate());
@@ -104,7 +104,7 @@ internal class CombatShieldsMod : Mod
         listingStandard.GapLine();
         listingStandard.End();
 
-        var borderRect = rect;
+        var borderRect = inRect;
 
         borderRect.y += listingStandard.CurHeight;
         borderRect.height -= listingStandard.CurHeight;
@@ -117,7 +117,7 @@ internal class CombatShieldsMod : Mod
                 def.modContentPack?.Name.ToLower().Contains(searchText.ToLower()) == true).ToList();
         }
 
-        var scrollContentRect = rect;
+        var scrollContentRect = inRect;
         scrollContentRect.height = allRangedWeapons.Count * 61f;
         scrollContentRect.width -= 20;
         scrollContentRect.x = 0;

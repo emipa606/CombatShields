@@ -8,7 +8,7 @@ using Verse;
 namespace CombatShields;
 
 [StaticConstructorOnStartup]
-internal class Harmonypatches
+internal static class Harmonypatches
 {
     public static readonly List<ThingDef> AllRangedWeapons;
     public static readonly List<ThingDef> AllBaseShieldableWeapons;

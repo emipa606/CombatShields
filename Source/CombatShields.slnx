@@ -6,4 +6,61 @@
     <BuildType Name="Release" />
   </Configurations>
   <Project Path="MedievalShields/CombatShields.csproj" />
+  <Folder Name="/XML/About/">
+    <File Path="../About/about.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Patches/Blastech/">
+    <File Path="../1.6/Patches/Blastech/WeaponPatch_BlasTech.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/">
+    <File Path="../1.6/Defs/UpdateInfo.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/PawnKindDefs/">
+    <File Path="../1.6/Defs/PawnKindDefs/PawnKinds_Shields.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Patches/Rimfire/">
+    <File Path="../1.6/Patches/Rimfire/WeaponPatch_Rimfire_Guns.xml" />
+    <File Path="../1.6/Patches/Rimfire/WeaponPatch_Rimfire_SpacerRanged.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Patches/Arrow Please/">
+    <File Path="../1.6/Patches/Arrow Please/WeaponPatch_AP.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Patches/Vanilla Weapons Expanded/">
+    <File Path="../1.6/Patches/Vanilla Weapons Expanded/WeaponPatch_VWE.xml" />
+    <File Path="../1.6/Patches/Vanilla Weapons Expanded/WeaponPatch_VWEC.xml" />
+    <File Path="../1.6/Patches/Vanilla Weapons Expanded/WeaponPatch_VWEF.xml" />
+    <File Path="../1.6/Patches/Vanilla Weapons Expanded/WeaponPatch_VWEL.xml" />
+    <File Path="../1.6/Patches/Vanilla Weapons Expanded/WeaponPatch_VWEM.xml" />
+    <File Path="../1.6/Patches/Vanilla Weapons Expanded/WeaponPatch_VWENL.xml" />
+    <File Path="../1.6/Patches/Vanilla Weapons Expanded/WeaponPatch_VWEQ.xml" />
+    <File Path="../1.6/Patches/Vanilla Weapons Expanded/WeaponPatch_VWET.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Patches/Rimsenal/">
+    <File Path="../1.6/Patches/Rimsenal/WeaponPatch_Rimsenal_Federation.xml" />
+    <File Path="../1.6/Patches/Rimsenal/WeaponPatch_Rimsenal_Feral.xml" />
+    <File Path="../1.6/Patches/Rimsenal/WeaponPatch_Rimsenal.xml" />
+    <File Path="../1.6/Patches/Rimsenal/WeaponPatch_RimsenalVanilla.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/ThingDefs/">
+    <File Path="../1.6/Defs/ThingDefs/Apparel_ShieldBase.xml" />
+    <File Path="../1.6/Defs/ThingDefs/Apparel_Shields.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/ThingCategoryDefs/">
+    <File Path="../1.6/Defs/ThingCategoryDefs/ShieldThingCategoryDefs.xml" />
+  </Folder>
+  <Folder Name="/XML/Languages/English/Keyed/">
+    <File Path="../Languages/English/Keyed/Text.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Patches/Core/">
+    <File Path="../1.6/Patches/Core/FactionDefs_Tribal.xml" />
+    <File Path="../1.6/Patches/Core/PawnKindPatch_Core.xml" />
+    <File Path="../1.6/Patches/Core/WeaponMeleeTags_Core.xml" />
+    <File Path="../1.6/Patches/Core/WeaponPatch_Core.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Patches/Medieval Times/">
+    <File Path="../1.6/Patches/Medieval Times/WeaponPatch_MT.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/ApparelLayerDefs/">
+    <File Path="../1.6/Defs/ApparelLayerDefs/AdditionalLayersShield.xml" />
+  </Folder>
 </Solution>
