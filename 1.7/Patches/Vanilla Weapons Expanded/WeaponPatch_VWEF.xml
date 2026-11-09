@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="VWEFT_Gun_HeavyRevolver"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!-- Allow certain ranged weapons to be used with shields -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VWEFT_Gun_HeavyRevolver"]/weaponTags</xpath>
+          <value>
+            <li>Shield_Sidearm</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VWEFT_Gun_VolcanicPistol"]/weaponTags</xpath>
+          <value>
+            <li>Shield_Sidearm</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VWEFT_Gun_FrontierPistol"]/weaponTags</xpath>
+          <value>
+            <li>Shield_Sidearm</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

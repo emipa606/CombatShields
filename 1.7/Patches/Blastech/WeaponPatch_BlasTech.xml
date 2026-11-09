@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Westar-34_Blaster_Pistol"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!-- Allow certain ranged weapons to be used with shields -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Westar-34_Blaster_Pistol"]/weaponTags</xpath>
+          <value>
+            <li>Shield_Sidearm</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Westar-35_Blaster_Pistol"]/weaponTags</xpath>
+          <value>
+            <li>Shield_Sidearm</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="SE-14_Light_Blaster_Pistol"]/weaponTags</xpath>
+          <value>
+            <li>Shield_Sidearm</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="DC-17_Blaster_Pistol"]/weaponTags</xpath>
+          <value>
+            <li>Shield_Sidearm</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="DC17B_Blaster_Pistol"]/weaponTags</xpath>
+          <value>
+            <li>Shield_Sidearm</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="B-2_Super_Droid_Wrist_Blaster"]/weaponTags</xpath>
+          <value>
+            <li>Shield_Sidearm</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="B-2_Super_Droid_Wrist_Cannon"]/weaponTags</xpath>
+          <value>
+            <li>Shield_Sidearm</li>
+          </value>
+        </li>
+        <!-- Don't allow certain melee weapons to be used with shields -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Electrostaff"]/weaponTags</xpath>
+          <value>
+            <li>Shield_NoSidearm</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

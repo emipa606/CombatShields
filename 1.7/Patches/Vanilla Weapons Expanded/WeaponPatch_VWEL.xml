@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="VWEL_Gun_LaserPistol"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!-- Allow certain ranged weapons to be used with shields -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VWEL_Gun_LaserPistol"]/weaponTags</xpath>
+          <value>
+            <li>Shield_Sidearm</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VWEL_Gun_SalvagedLaserPistol"]/weaponTags</xpath>
+          <value>
+            <li>Shield_Sidearm</li>
+          </value>
+        </li>
+        <!-- Allow certain ranged weapons to be used with light shields -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VWEL_Gun_LaserSMG"]/weaponTags</xpath>
+          <value>
+            <li>LightShield_Sidearm</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Allow certain ranged weapons to be used with shields -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="Gun_Revolver"]/weaponTags</xpath>
+    <value>
+      <li>Shield_Sidearm</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="Gun_Autopistol"]/weaponTags</xpath>
+    <value>
+      <li>Shield_Sidearm</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Gun_HeavySMG"]/weaponTags</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="Gun_HeavySMG"]</xpath>
+      <value>
+        <weaponTags>
+          <li>LightShield_Sidearm</li>
+        </weaponTags>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="Gun_HeavySMG"]/weaponTags</xpath>
+      <value>
+        <li>LightShield_Sidearm</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Gun_MachinePistol"]/weaponTags</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="Gun_MachinePistol"]</xpath>
+      <value>
+        <weaponTags>
+          <li>Shield_Sidearm</li>
+        </weaponTags>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="Gun_MachinePistol"]/weaponTags</xpath>
+      <value>
+        <li>Shield_Sidearm</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[@Name="BaseMakeableGrenade"]</xpath>
+    <value>
+      <weaponTags>
+        <li>Shield_Sidearm</li>
+      </weaponTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="Pila"]/weaponTags</xpath>
+    <value>
+      <li>Shield_Sidearm</li>
+    </value>
+  </Operation>
+  <!-- Don't certain melee weapons to be used with shields -->
+  <!-- Example/Testing
+   <Operation Class="PatchOperationAdd">
+   <xpath>/Defs/ThingDef[defName="MeleeWeapon_Gladius"]/weaponTags</xpath>
+   <value>
+	<li>Shield_NoSidearm</li>
+   </value>
+   </Operation>   
+-->
+</Patch>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Add shield-equipped pawnkinds to the tribal factions. -->
+  <!--
+   <Operation Class="PatchOperationReplace">
+   <xpath>/Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[1]/options/Tribal_Warrior</xpath>
+	<value>
+		<Tribal_Warrior>3</Tribal_Warrior>
+		<Tribal_ShieldWarrior>2</Tribal_ShieldWarrior>
+	</value>
+   </Operation>
+
+   <Operation Class="PatchOperationReplace">
+   <xpath>/Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[3]/options/Tribal_Warrior</xpath>
+	<value>
+		<Tribal_Warrior>6</Tribal_Warrior>
+		<Tribal_ShieldWarrior>4</Tribal_ShieldWarrior>
+	</value>
+   </Operation>
+
+   <Operation Class="PatchOperationReplace">
+   <xpath>/Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[4]/options/Tribal_Warrior</xpath>
+	<value>
+		<Tribal_Warrior>14</Tribal_Warrior>
+		<Tribal_ShieldWarrior>6</Tribal_ShieldWarrior>
+	</value>
+   </Operation>
+
+   <Operation Class="PatchOperationReplace">
+   <xpath>/Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[5]/guards/Tribal_Warrior</xpath>
+	<value>
+		<Tribal_Warrior>5</Tribal_Warrior>
+		<Tribal_ShieldWarrior>2</Tribal_ShieldWarrior>
+	</value>
+   </Operation>
+
+   <Operation Class="PatchOperationReplace">
+   <xpath>/Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[6]/options/Tribal_Warrior</xpath>
+	<value>
+		<Tribal_Warrior>4</Tribal_Warrior>
+		<Tribal_ShieldWarrior>3</Tribal_ShieldWarrior>
+	</value>
+   </Operation>
+-->
+</Patch>

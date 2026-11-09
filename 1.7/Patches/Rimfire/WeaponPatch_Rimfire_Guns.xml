@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="RF_Gun_Deringer"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!-- Pocket revolver -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="RF_Gun_Deringer"]/weaponTags</xpath>
+          <value>
+            <li>Shield_Sidearm</li>
+          </value>
+        </li>
+        <!-- Rimfire pistol -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="RF_Gun_RugerMkIII"]/weaponTags</xpath>
+          <value>
+            <li>Shield_Sidearm</li>
+          </value>
+        </li>
+        <!-- Detective pistol -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="RF_Gun_AT2K"]/weaponTags</xpath>
+          <value>
+            <li>Shield_Sidearm</li>
+          </value>
+        </li>
+        <!-- Curved frame pistol -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="RF_Gun_VektorCP"]/weaponTags</xpath>
+          <value>
+            <li>Shield_Sidearm</li>
+          </value>
+        </li>
+        <!-- Counterfeit handgun -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="RF_Gun_ParaOrdnancePFourteenFortyfive"]/weaponTags</xpath>
+          <value>
+            <li>Shield_Sidearm</li>
+          </value>
+        </li>
+        <!-- Soviet pistol -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="RF_Gun_TokarevTT"]/weaponTags</xpath>
+          <value>
+            <li>Shield_Sidearm</li>
+          </value>
+        </li>
+        <!-- Machinepistol -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="RF_Gun_Tecnine"]/weaponTags</xpath>
+          <value>
+            <li>Shield_Sidearm</li>
+          </value>
+        </li>
+        <!-- Burstfire machinepistol -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="RF_Gun_93R"]/weaponTags</xpath>
+          <value>
+            <li>Shield_Sidearm</li>
+          </value>
+        </li>
+        <!-- Burstfire machinepistol -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="RF_Gun_93R"]/weaponTags</xpath>
+          <value>
+            <li>Shield_Sidearm</li>
+          </value>
+        </li>
+        <!-- Silenced PDW -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="RF_Gun_TMP"]/weaponTags</xpath>
+          <value>
+            <li>Shield_Sidearm</li>
+          </value>
+        </li>
+        <!-- Folding stock SMG -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="RF_Gun_Skorpion"]/weaponTags</xpath>
+          <value>
+            <li>Shield_Sidearm</li>
+          </value>
+        </li>
+        <!-- Charge pistol -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="RF_Gun_ChargePistol"]/weaponTags</xpath>
+          <value>
+            <li>Shield_Sidearm</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

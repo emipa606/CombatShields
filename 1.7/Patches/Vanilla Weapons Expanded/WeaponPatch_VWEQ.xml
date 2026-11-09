@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="VWE_Gun_AutomaticPistol"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!-- Allow certain ranged weapons to be used with shields -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VWE_Gun_AutomaticPistol"]/weaponTags</xpath>
+          <value>
+            <li>Shield_Sidearm</li>
+          </value>
+        </li>
+        <!-- Allow certain ranged weapons to be used with light shields -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VWE_Gun_PDW"]/weaponTags</xpath>
+          <value>
+            <li>LightShield_Sidearm</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

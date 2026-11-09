@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="Apparel_ShieldBase" Abstract="True">
+    <thingClass>CombatShields.ColorableShield</thingClass>
+    <category>Item</category>
+    <selectable>True</selectable>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <techLevel>Neolithic</techLevel>
+    <relicChance>0</relicChance>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <ArmorRating_Blunt>0.0</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.0</ArmorRating_Sharp>
+      <StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+      <Beauty>-3</Beauty>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_Styleable">
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <thingCategories>
+      <li>Shield</li>
+    </thingCategories>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <bodyPartGroups>
+        <li>LeftHand</li>
+      </bodyPartGroups>
+      <wornGraphicPath>
+      </wornGraphicPath>
+      <layers>
+        <li>Shield</li>
+      </layers>
+      <tags>
+        <li>Shield</li>
+      </tags>
+    </apparel>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <smeltable>True</smeltable>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+  <!-- Makeable Shield -->
+  <ThingDef Name="Shield_MakeableBase" ParentName="Apparel_ShieldBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smelt</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+      </defaultIngredientFilter>
+    </recipeMaker>
+  </ThingDef>
+  <!-- Buckler -->
+  <ThingDef Name="Buckler_Shield" ParentName="Shield_MakeableBase" Abstract="True">
+    <apparel>
+      <bodyPartGroups Inherit="False">
+        <li>Arms</li>
+        <li>LeftHand</li>
+      </bodyPartGroups>
+    </apparel>
+    <equippedStatOffsets>
+      <ShootingAccuracyPawn>-1.5</ShootingAccuracyPawn>
+      <MeleeDodgeChance>0.15</MeleeDodgeChance>
+    </equippedStatOffsets>
+  </ThingDef>
+  <!-- Small Shield -->
+  <ThingDef Name="Small_Shield" ParentName="Shield_MakeableBase" Abstract="True">
+    <apparel>
+      <bodyPartGroups Inherit="False">
+        <li>Shoulders</li>
+        <li>Torso</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+    </apparel>
+    <equippedStatOffsets>
+      <MeleeHitChance>-0.05</MeleeHitChance>
+      <ShootingAccuracyPawn>-2</ShootingAccuracyPawn>
+      <AimingDelayFactor>0.1</AimingDelayFactor>
+      <MeleeDodgeChance>0.1</MeleeDodgeChance>
+    </equippedStatOffsets>
+  </ThingDef>
+  <!-- Medium Shield -->
+  <ThingDef Name="Medium_Shield" ParentName="Shield_MakeableBase" Abstract="True">
+    <apparel>
+      <bodyPartGroups Inherit="False">
+        <li>Shoulders</li>
+        <li>Torso</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+    </apparel>
+    <equippedStatOffsets>
+      <MeleeHitChance>-0.1</MeleeHitChance>
+      <MoveSpeed>-0.75</MoveSpeed>
+      <ShootingAccuracyPawn>-4</ShootingAccuracyPawn>
+      <AimingDelayFactor>0.25</AimingDelayFactor>
+      <MeleeDodgeChance>-0.4</MeleeDodgeChance>
+    </equippedStatOffsets>
+  </ThingDef>
+  <!-- Large Shield -->
+  <ThingDef Name="Large_Shield" ParentName="Shield_MakeableBase" Abstract="True">
+    <apparel>
+      <bodyPartGroups Inherit="False">
+        <li>Shoulders</li>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>LeftHand</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+    </apparel>
+    <equippedStatOffsets>
+      <MeleeHitChance>-0.15</MeleeHitChance>
+      <MoveSpeed>-1.25</MoveSpeed>
+      <MeleeDodgeChance>-0.6</MeleeDodgeChance>
+      <ShootingAccuracyPawn>-4</ShootingAccuracyPawn>
+      <AimingDelayFactor>0.3</AimingDelayFactor>
+    </equippedStatOffsets>
+  </ThingDef>
+  <ThingDef Name="Large_Shield_NonCraftable" ParentName="Apparel_ShieldBase" Abstract="True">
+    <apparel>
+      <bodyPartGroups Inherit="False">
+        <li>Shoulders</li>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>LeftHand</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+    </apparel>
+    <equippedStatOffsets>
+      <MeleeHitChance>-0.15</MeleeHitChance>
+      <MoveSpeed>-1.25</MoveSpeed>
+      <MeleeDodgeChance>-0.6</MeleeDodgeChance>
+      <ShootingAccuracyPawn>-4</ShootingAccuracyPawn>
+      <AimingDelayFactor>0.3</AimingDelayFactor>
+    </equippedStatOffsets>
+  </ThingDef>
+  <!-- Tower Shield -->
+  <ThingDef Name="Tower_Shield" ParentName="Shield_MakeableBase" Abstract="True">
+    <apparel>
+      <bodyPartGroups Inherit="False">
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+        <li>FullHead</li>
+        <li>Feet</li>
+      </bodyPartGroups>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+    </apparel>
+    <equippedStatOffsets>
+      <MeleeHitChance>-0.25</MeleeHitChance>
+      <MoveSpeed>-2</MoveSpeed>
+      <ShootingAccuracyPawn>-5</ShootingAccuracyPawn>
+      <MeleeDodgeChance>-0.8</MeleeDodgeChance>
+      <AimingDelayFactor>0.5</AimingDelayFactor>
+    </equippedStatOffsets>
+  </ThingDef>
+</Defs>

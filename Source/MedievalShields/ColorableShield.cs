@@ -56,17 +56,18 @@ public class ColorableShield : Apparel_Shield
         }
 
         var vector = Wearer.Drawer.DrawPos;
-        vector.y = AltitudeLayer.Pawn.AltitudeFor();
+        var frontLayer = PawnRenderUtility.AltitudeForLayer(100f) + Altitudes.AltInc;
+        var backLayer = PawnRenderUtility.AltitudeForLayer(-10f) - Altitudes.AltInc;
+        vector.y += frontLayer;
         var rotation = Rot4.North;
         if (Wearer.Rotation == Rot4.North)
         {
-            vector.y = AltitudeLayer.Item.AltitudeFor();
+            vector.y = Wearer.Drawer.DrawPos.y + backLayer;
             vector.x -= 0.2f;
             vector.z -= 0.2f;
         }
         else if (Wearer.Rotation == Rot4.South)
         {
-            vector.y += 0.033f;
             vector.x += 0.2f;
             vector.z -= 0.2f;
         }
@@ -77,7 +78,7 @@ public class ColorableShield : Apparel_Shield
         }
         else if (Wearer.Rotation == Rot4.West)
         {
-            vector.y = AltitudeLayer.MoteOverhead.AltitudeFor();
+            vector.y = Wearer.Drawer.DrawPos.y + backLayer;
             vector.z -= 0.2f;
             rotation = Rot4.West;
         }

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="MedTimes_Ranged_Crossbow"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!-- Allow certain ranged weapons to be used with shields -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="MedTimes_Ranged_Crossbow"]/weaponTags</xpath>
+          <value>
+            <li>Shield_Sidearm</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="MedTimes_Ranged_HandCrossbow"]/weaponTags</xpath>
+          <value>
+            <li>Shield_Sidearm</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="MedTimes_Ranged_Arbalest"]/weaponTags</xpath>
+          <value>
+            <li>Shield_Sidearm</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="MedTimes_Ranged_Crossbow_Nan"]</xpath>
+          <value>
+            <weaponTags>
+              <li>Shield_Sidearm</li>
+            </weaponTags>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="MedTimes_Ranged_HandCrossbow_Nan"]</xpath>
+          <value>
+            <weaponTags>
+              <li>Shield_Sidearm</li>
+            </weaponTags>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="MedTimes_Ranged_Arbalest_Nan"]</xpath>
+          <value>
+            <weaponTags>
+              <li>Shield_Sidearm</li>
+            </weaponTags>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[@Name="MedTimes_RangedGrenade"]</xpath>
+          <value>
+            <weaponTags>
+              <li>Shield_Sidearm</li>
+            </weaponTags>
+          </value>
+        </li>
+        <!-- Don't allow certain melee weapons to be used with shields -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="MedTimes_Melee_AxeForester"]/weaponTags</xpath>
+          <value>
+            <li>Shield_NoSidearm</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="MedTimes_Melee_HammerBandit"]/weaponTags</xpath>
+          <value>
+            <li>Shield_NoSidearm</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="MedTimes_Melee_BoarSpear"]/weaponTags</xpath>
+          <value>
+            <li>Shield_NoSidearm</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="MedTimes_Melee_Gisarme"]/weaponTags</xpath>
+          <value>
+            <li>Shield_NoSidearm</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="MedTimes_Melee_SwordLong"]/weaponTags</xpath>
+          <value>
+            <li>Shield_NoSidearm</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="MedTimes_Melee_Halberd"]/weaponTags</xpath>
+          <value>
+            <li>Shield_NoSidearm</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="MedTimes_Melee_Claymore"]/weaponTags</xpath>
+          <value>
+            <li>Shield_NoSidearm</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="MedTimes_Melee_WarHammer"]/weaponTags</xpath>
+          <value>
+            <li>Shield_NoSidearm</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="MedTimes_Melee_AxeForester_Nan"]/weaponTags</xpath>
+          <value>
+            <li>Shield_NoSidearm</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="MedTimes_Melee_BoarSpear_Nan"]/weaponTags</xpath>
+          <value>
+            <li>Shield_NoSidearm</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[@Name="MedTimes_LongHammer_Nan"]</xpath>
+          <value>
+            <weaponTags>
+              <li>Shield_NoSidearm</li>
+            </weaponTags>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[@Name="MedTimes_Spear_Nan"]</xpath>
+          <value>
+            <weaponTags>
+              <li>Shield_NoSidearm</li>
+            </weaponTags>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[@Name="MedTimes_Flail_Nan"]</xpath>
+          <value>
+            <weaponTags>
+              <li>Shield_NoSidearm</li>
+            </weaponTags>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[@Name="MedTimes_PoleAxe_Nan"]</xpath>
+          <value>
+            <weaponTags>
+              <li>Shield_NoSidearm</li>
+            </weaponTags>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="MedTimes_Melee_SwordVicious_Art"]</xpath>
+          <value>
+            <weaponTags>
+              <li>Shield_NoSidearm</li>
+            </weaponTags>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="MedTimes_Melee_SwordWargod_Art"]</xpath>
+          <value>
+            <weaponTags>
+              <li>Shield_NoSidearm</li>
+            </weaponTags>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="MedTimes_Melee_SwordCaladbog_Art"]</xpath>
+          <value>
+            <weaponTags>
+              <li>Shield_NoSidearm</li>
+            </weaponTags>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="MedTimes_Melee_SwordAnsweller_Art"]</xpath>
+          <value>
+            <weaponTags>
+              <li>Shield_NoSidearm</li>
+            </weaponTags>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="MedTimes_Melee_ClubTalentBreaker_Art"]</xpath>
+          <value>
+            <weaponTags>
+              <li>Shield_NoSidearm</li>
+            </weaponTags>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="MedTimes_Melee_SwordVicious_Leg"]</xpath>
+          <value>
+            <weaponTags>
+              <li>Shield_NoSidearm</li>
+            </weaponTags>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="MedTimes_Melee_SwordWargod_Leg"]</xpath>
+          <value>
+            <weaponTags>
+              <li>Shield_NoSidearm</li>
+            </weaponTags>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="MedTimes_Melee_SwordCaladbog_Leg"]</xpath>
+          <value>
+            <weaponTags>
+              <li>Shield_NoSidearm</li>
+            </weaponTags>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="MedTimes_Melee_SwordAnsweller_Leg"]</xpath>
+          <value>
+            <weaponTags>
+              <li>Shield_NoSidearm</li>
+            </weaponTags>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="MedTimes_Melee_ClubTalentBreaker_Leg"]</xpath>
+          <value>
+            <weaponTags>
+              <li>Shield_NoSidearm</li>
+            </weaponTags>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="MedTimes_Melee_AxeBlood_Leg"]</xpath>
+          <value>
+            <weaponTags>
+              <li>Shield_NoSidearm</li>
+            </weaponTags>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="MedTimes_Melee_AxeVidar_Leg"]</xpath>
+          <value>
+            <weaponTags>
+              <li>Shield_NoSidearm</li>
+            </weaponTags>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="MedTimes_Melee_HammerVoid_Leg"]</xpath>
+          <value>
+            <weaponTags>
+              <li>Shield_NoSidearm</li>
+            </weaponTags>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

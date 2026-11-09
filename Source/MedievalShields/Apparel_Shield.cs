@@ -78,17 +78,18 @@ public class Apparel_Shield : Apparel
 
         var num = 0f;
         var vector = Wearer.Drawer.DrawPos;
-        vector.y = AltitudeLayer.MoteOverhead.AltitudeFor();
+        var frontLayer = PawnRenderUtility.AltitudeForLayer(100f) + Altitudes.AltInc;
+        var backLayer = PawnRenderUtility.AltitudeForLayer(-10f) - Altitudes.AltInc;
+        vector.y += frontLayer;
         var s = new Vector3(1f, 1f, 1f);
         if (Wearer.Rotation == Rot4.North)
         {
-            vector.y = AltitudeLayer.Item.AltitudeFor();
+            vector.y = Wearer.Drawer.DrawPos.y + backLayer;
             vector.x -= 0.2f;
             vector.z -= 0.2f;
         }
         else if (Wearer.Rotation == Rot4.South)
         {
-            vector.y += 0.033f;
             vector.x += 0.2f;
             vector.z -= 0.2f;
         }
@@ -99,7 +100,7 @@ public class Apparel_Shield : Apparel
         }
         else if (Wearer.Rotation == Rot4.West)
         {
-            vector.y = AltitudeLayer.Item.AltitudeFor();
+            vector.y = Wearer.Drawer.DrawPos.y + backLayer;
             vector.z -= 0.2f;
             num = 270f;
         }
